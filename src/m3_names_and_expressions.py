@@ -3,7 +3,7 @@ answer = 2 ** 5
 print(answer * 100)
 
 ###############################################################################
-# TODO: 1.
+# DONE: 1.
 #   Read the 2 lines of code ABOVE this _TODO_.  That code:
 #     1. Computes 2 raised to the 5th power,
 #          yielding the object that is the integer 32.
@@ -12,7 +12,7 @@ print(answer * 100)
 #     4. Multiplies that object (32) by 100
 #          (hence computing the object that is the integer 3,200).
 #     5. Prints the newly-computed object.  (It prints WITHOUT the comma.)
-#
+print();
 #   Make sure that you understand that those two lines do the above,
 #     ** ASKING QUESTIONS AS NEEDED. **
 #   Once you completely understand the above, run this module,
@@ -20,36 +20,52 @@ print(answer * 100)
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   Immediately below this _TODO_, write code that:
 #     - Computes 77 plus the cosine of 2.75.
 #         HINT: You will need to import the   math  module (library).
 #     - Stores that computed value using a name of your own choosing.
 #     - Prints the square root of that computed value.
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
+
+import math;
+print("TODO #2:")
+p = 77 + math.cos(2.75);
+print(p);
+print(math.sqrt(p));
+print();
 ###############################################################################
 
 ###############################################################################
-# TODO: 3.
+# DONE: 3.
 #   Immediately below this _TODO_, write code that computes and prints:
 #      the square root of ((41 * 88) + (4 * the cosine of 2))
 #   Use as few or as many intermediate names as you feel appropriate.
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
+print("TODO #3: ");
+print((41*88)+(4*math.cos(2)));
+print();
 ###############################################################################
 
 ###############################################################################
-# TODO: 4.
+# DONE: 4.
 #   Immediately below this _TODO_,
 #   write code that computes the square root of 2 in two ways:
 #     - By using the   math.sqrt   function.
 #     - By raising 2 to the 0.5 power (using   **   for exponentiation).
 #   Print both of the expressions that you write.
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
+
+print("TODO #4");
+print(math.sqrt(2));
+print(2 ** 0.5);
+print();
 ###############################################################################
 
 
 ###############################################################################
-# TODO: 5.
+# DONE: 5.
+print("TODO #5:")
 #   Every object has a TYPE and a VALUE.  For example,
 #   for the object that is computed by  math.sqrt(2):
 #      Its TYPE is float  (which is shorthand for "floating point number").
@@ -72,18 +88,43 @@ print(answer * 100)
 #      2. Then write code of the form   print(type(BLAH)).
 #      3. THen RUN the code to LEARN its TYPE.
 
-#       "hello"
-#       'hello'
-#       'a b c'
-#       3 + 3
-#       "3" + "3"
-#       2 ** 100
-#       2.0 ** 100
-#       math.sin(8)
-#       math.sin
-#       print
-#       math
-#       'math'
+#       "hello"             String?
+print(type("hello"));
+
+#       'hello'             String?
+print(type('hello'));
+
+#       'a b c'             String?
+print(type('a b c'));
+
+#       3 + 3               Int?
+print(type(3+3));
+
+#       "3" + "3"           String?
+print(type("3"+"3"));
+
+#       2 ** 100            Int?
+print(type(2**100));
+
+#       2.0 ** 100          Float?
+print(type(2.0**100));
+
+#       math.sin(8)         Float?
+print(type(math.sin(8)));
+
+#       math.sin            Function?
+print(type(math.sin));
+
+#       print               Function?
+print(type(print));
+
+#       math                Library?        X This is a module not a string
+print(type(math));
+
+#       'math'              String?
+print(type('math'));
+
+print();
 #
 # After you have written and run the code to learn the TYPE
 # of each of the above, change the above _TODO_ to DONE.
@@ -91,7 +132,7 @@ print(answer * 100)
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #
