@@ -26,9 +26,15 @@
 ###############################################################################
 
 
-print('Hello, World')
-print('hi there')
-print('one', 'two', 'buckle my shoe')
+#print('Hello, World')
+#print('hi there')
+#print('one', 'two', 'buckle my shoe')
 
-print(3 + 9)
-print('3 + 9', 'versus', 3 + 9)
+#print(3 + 9)
+#print('3 + 9', 'versus', 3 + 9)
+
+total = 5
+for k in range(3):
+    total = total * k
+
+print(total)
